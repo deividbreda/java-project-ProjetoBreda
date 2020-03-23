@@ -19,6 +19,7 @@ import vo.Encomendas;
  */
 public class BdEncomendas {
     public void insere(Encomendas m){
+        //Teste
         String sql = "insert into metodo(codigo,nome,quantidade,nomecliente,uf,cidade,rua,status,numero,complemento) values(?,?,?,?,?,?,?,?,?,?)";
         try{
            PreparedStatement ps = Bd.getCon().prepareStatement(sql); 
